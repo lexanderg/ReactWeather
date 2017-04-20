@@ -16,7 +16,6 @@ module.exports = {
         return res.data.main.temp;
       }
     }, function (res){
-      debugger;
       throw new Error(res.response.data.message);
     });
   }
